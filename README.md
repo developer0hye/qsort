@@ -54,7 +54,7 @@ FPS is measured on a Intel I5 10400 CPU.
 
 ### Using QSORT in your own project
 
-Below is the gist of how to instantiate and update SORT. See the ['__main__'](https://github.com/developer0hye/qsort/blob/main/qsort.py#L251-L253) section of [qsort.py](https://github.com/developer0hye/qsort/blob/main/qsort.py) for a complete example.
+Below is the gist of how to instantiate and update QSORT. See the ['__main__'](https://github.com/developer0hye/qsort/blob/main/qsort.py#L251-L253) section of [qsort.py](https://github.com/developer0hye/qsort/blob/main/qsort.py) for a complete example.
 
 ```python
 from qsort import *
