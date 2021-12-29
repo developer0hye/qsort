@@ -46,7 +46,7 @@ Method | MOTA | IDs | FPS
 --------------- |:----:|:----:|:----:|
 [SORT](https://github.com/abewley/sort#main-results) | 34.0| 274 | 742 |
 QSORT| 31.7| 344| 2194 |
-
+- Sequence: TUD-Campus, ETH-Sunnyday, ETH-Pedcross2, ADL-Rundle-8, Venice-2, and KITTI-17
 - MOTA, FPS: Higher is better.
 - IDs: Lower is better.
 
