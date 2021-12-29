@@ -28,40 +28,36 @@ python qsort.py
 
 To display the results you need to:
 
-1. Download the [2D MOT 2015 benchmark dataset](https://motchallenge.net/data/MOT15.zip)
+1. Download the [2D MOT 2015 benchmark dataset](https://motchallenge.net/data/MOT15.zip) and unzip this file.
 0. Create a symbolic link to the dataset
 ```
-ln -s /path/to/MOT2015_challenge/data/2DMOT2015 mot_benchmark
+ln -s /path/to/MOT15 MOT15
 ```
 0. Run the demo with the ```--display``` flag
 ```
 python qsort.py --display
 ```
 
-
 ### Main Results
 
-Using the [MOT challenge devkit](https://motchallenge.net/devkit/) the method produces the following results (as described in the paper).
+Using the [MOT challenge devkit](https://github.com/JonathonLuiten/TrackEval) the method produces the following results (as described in the paper).
 
- Sequence       | Rcll | Prcn |  FAR | GT  MT  PT  ML|   FP    FN  IDs   FM|  MOTA  MOTP MOTAL
---------------- |:----:|:----:|:----:|:-------------:|:-------------------:|:------------------:
- TUD-Campus     | 68.5 | 94.3 | 0.21 |  8   6   2   0|   15   113    6    9|  62.7  73.7  64.1
- ETH-Sunnyday   | 77.5 | 81.9 | 0.90 | 30  11  16   3|  319   418   22   54|  59.1  74.4  60.3
- ETH-Pedcross2  | 51.9 | 90.8 | 0.39 | 133  17  60  56|  330  3014   77  103|  45.4  74.8  46.6
- ADL-Rundle-8   | 44.3 | 75.8 | 1.47 | 28   6  16   6|  959  3781  103  211|  28.6  71.1  30.1
- Venice-2       | 42.5 | 64.8 | 2.75 | 26   7   9  10| 1650  4109   57  106|  18.6  73.4  19.3
- KITTI-17       | 67.1 | 92.3 | 0.26 |  9   1   8   0|   38   225    9   16|  60.2  72.3  61.3
- *Overall*      | 49.5 | 77.5 | 1.24 | 234  48 111  75| 3311 11660  274  499|  34.0  73.3  35.1
+Method | MOTA | IDs | FPS
+--------------- |:----:|:----:|:----:|
+[SORT](https://github.com/abewley/sort#main-results) | 34.0| 274 | |
+QSORT| 31.7| 344| |
 
+- MOTA, FPS: Higher is better.
+- IDs: Lower is better.
 
-### Using SORT in your own project
+### Using QSORT in your own project
 
 Below is the gist of how to instantiate and update SORT. See the ['__main__'](https://github.com/developer0hye/qsort/blob/main/qsort.py#L251-L253) section of [qsort.py](https://github.com/developer0hye/qsort/blob/main/qsort.py) for a complete example.
 
 ```python
 from qsort import *
 
-#create instance of SORT
+#create instance of QSORT
 mot_tracker = QSORT() 
 
 # get detections
