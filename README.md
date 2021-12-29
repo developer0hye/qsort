@@ -1,6 +1,6 @@
 # QSORT
 
-QSORT(Quick Simple Online and Realtime Tracking) is a simple online and realtime tracking algorithm for 2D multiple object tracking in video sequences. It is much faster than [SORT(Simple Online and Realtime Tracking)](https://arxiv.org/abs/1602.00763). But its performance is a little worse than SORT.
+QSORT(Quick + Simple Online and Realtime Tracking) is a simple online and realtime tracking algorithm for 2D multiple object tracking in video sequences. It is much faster than [SORT(Simple Online and Realtime Tracking)](https://arxiv.org/abs/1602.00763). But its performance is a little worse than SORT.
 
 This method and project are heavily based on [abewley/sort](https://github.com/abewley/sort).
 
