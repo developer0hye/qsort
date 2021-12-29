@@ -44,11 +44,13 @@ Using the [MOT challenge devkit](https://github.com/JonathonLuiten/TrackEval) th
 
 Method | MOTA | IDs | FPS
 --------------- |:----:|:----:|:----:|
-[SORT](https://github.com/abewley/sort#main-results) | 34.0| 274 | |
-QSORT| 31.7| 344| |
+[SORT](https://github.com/abewley/sort#main-results) | 34.0| 274 | 742 |
+QSORT| 31.7| 344| 2194 |
 
 - MOTA, FPS: Higher is better.
 - IDs: Lower is better.
+
+FPS is measured on a Intel I5 10400 CPU.
 
 ### Using QSORT in your own project
 
